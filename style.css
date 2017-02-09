@@ -1,0 +1,13 @@
+.html {
+  width: 100vw;
+  background-color: blue;
+}
+
+.container {
+  background-color: blue;
+}
+
+.cards {
+  width: 30vw;
+  padding: 3.3;
+}
