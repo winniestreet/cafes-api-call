@@ -1,13 +1,36 @@
-.html {
-  width: 100vw;
-  background-color: blue;
-}
-
 .container {
-  background-color: blue;
+  width: 100vw;
 }
 
-.cards {
-  width: 30vw;
-  padding: 3.3;
+div.cards.card.ng-scope{
+  padding: 10px 10px;
+  display: inline-block;
 }
+
+@media (min-width: 1200px) {
+    div.cards.card.ng-scope {
+      width: 25vw;
+    }
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    div.cards.card.ng-scope{
+      width: 30vw;
+    }
+
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  div.cards.card.ng-scope {
+    width: 50vw;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  div.cards.card.ng-scope {
+    width: 100vw;
+  }
+ }

@@ -1,5 +1,4 @@
-<script>
-  var app = angular.module('myApp', []);
+var app = angular.module('myApp', []);
   app.controller('cafeController', function($scope, $http) {
     $http({
       method: "GET",
@@ -10,4 +9,3 @@
     })
     .success(function(response) {$scope.cafes = response.data;});
   });
-</script>
